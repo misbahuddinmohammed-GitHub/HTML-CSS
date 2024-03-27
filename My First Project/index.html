@@ -16,6 +16,7 @@
     <title>Omnifood</title>
   </head>
   <body>
+    <!-- OMNIFOOD LOGO AND THE NAVIGATION BAR -->
     <header class="header">
       <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
       <nav class="main-nav">
@@ -29,6 +30,7 @@
         </ul>
       </nav>
     </header>
+    <!-- OMNIFOOD LOGO AND THE NAVIGATION BAR -->
 
     <main>
       <section class="section-hero">
@@ -76,6 +78,25 @@
         </div>
       </section>
 
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="img/logos/techcrunch.png" alt="Logo of techcrunch" />
+            <img
+              src="img/logos/business-insider.png"
+              alt="Logo of business-insider"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="Logo of the-new-york-times"
+            />
+            <img src="img/logos/forbes.png" alt="Logo of forbes" />
+            <img src="img/logos/usa-today.png" alt="Logo of usa-today" />
+          </div>
+        </div>
+      </section>
+
       <section class="section-how">
         <div class="container">
           <span class="subheading">How it works</span>
@@ -85,7 +106,7 @@
           </h2>
         </div>
 
-        <div class="container grid grid--2--cols">
+        <div class="container grid grid--2--cols grid--center--v">
           <!-- All About Step-1 Process -->
 
           <div class="step-text-box">
@@ -150,6 +171,86 @@
           </div>
         </div>
       </section>
+
+      <section class="section-meals">
+        <div class="container">
+          <span class="subheading">Meals</span>
+          <!-- Span is an inline element we will convert it to block in CSS -->
+          <h2 class="heading-secondary">
+            Omnifood AI chooses from 5,000+ recipes
+          </h2>
+        </div>
+
+        <div class="container grid grid--3--cols">
+          <div class="meal">
+            <img
+              src="img/meals/meal-1.jpg"
+              alt="Japanese Gyozas"
+              class="meal-img"
+            />
+
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegetarian">Vegetarian</span>
+              </div>
+              <p class="meal-title">Japanese Gyozas</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame"></ion-icon
+                  ><span><strong>650</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="restaurant"></ion-icon
+                  ><span>NutriScore &reg; <strong>74</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon
+                  ><span><strong>4.9</strong> rating (537)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="meal">
+            <img
+              src="img/meals/meal-2.jpg"
+              alt="Avocado Salad"
+              class="meal-img"
+            />
+
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegan">Vegan</span>
+                <span class="tag tag--paleo">Paleo</span>
+              </div>
+              <p class="meal-title">Avocado Salad</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame"></ion-icon
+                  ><span><strong>400</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="restaurant"></ion-icon
+                  ><span>NutriScore &reg; <strong>92</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon
+                  ><span><strong>4.8</strong> rating (441)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="meal">List of diet</div>
+        </div>
+      </section>
     </main>
+    <!-- Below this is a javascript code wich is taken from the ionicons browser, it is used because to inject the icons by name from the live server to the HTML Document -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- Here a warning came in the debug console to add this below Javascript to the next of the above JavaScript code to get a better experience of the icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </body>
 </html>
